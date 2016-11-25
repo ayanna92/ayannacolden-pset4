@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XCO-s1-Rdt" id="AZg-kb-llk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To-Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihE-kb-cod">
@@ -68,6 +68,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7c-qa-eyU">
                                         <rect key="frame" x="304" y="16" width="51" height="30"/>
                                         <state key="normal" title="ADD"/>
+                                        <connections>
+                                            <action selector="create:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAk-b9-JmP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,6 +96,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IXY-sQ-fXA"/>
+                    <connections>
+                        <outlet property="tableView" destination="Fst-Ap-LuW" id="9m3-Uc-7ee"/>
+                        <outlet property="todo" destination="e1P-r4-HOd" id="QkU-fS-uNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

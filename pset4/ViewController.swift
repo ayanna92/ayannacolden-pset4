@@ -56,6 +56,8 @@ class ViewController: UIViewController, UITableViewDataSource {
             } catch {
                 print(error)
             }
+            
+            self.todo.text?.removeAll()
         }
         
         

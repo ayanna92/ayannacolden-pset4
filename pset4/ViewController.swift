@@ -53,7 +53,6 @@ class ViewController: UIViewController, UITableViewDataSource {
             do {
                 self.array = try self.db!.read()
                 self.tableView.reloadData()
-                print(self.array)
             } catch {
                 print(error)
             }
@@ -82,7 +81,6 @@ class ViewController: UIViewController, UITableViewDataSource {
             
             do {
                 try db!.delete(task: array.remove(at: indexPath.row))
-                print(array)
             } catch {
                 print(error)
             }

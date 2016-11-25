@@ -58,7 +58,6 @@ class DatabaseHelper {
         
         do {
             let rowId = try db!.run(insert)
-            print(rowId)
         } catch {
             throw error
             
